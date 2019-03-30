@@ -16,4 +16,8 @@ public class Employee {
 		return baseSalary;
 	}
 	
+	public double calculate(Occupation occupation) {
+		return this.occupation.getRules().calculate(this);
+	}
+	
 }
