@@ -1,15 +1,18 @@
 
 public class App {
 	public static void main(String[] args) {
-
-		Employee developer = new Employee(1200, Occupation.DEVELOPER);
-
-		CalculationRules tenOrTwentyPerCent = new TenOrTwentyPerCent();
-
-		System.out.println("Developer salary with discount: " + tenOrTwentyPerCent.calculate(developer));
-		System.out.println("");
-
-		Employee dba = new Employee(3200, Occupation.DBA);
-		System.out.println("DBA salary with discount: " + tenOrTwentyPerCent.calculate(dba));
+		// Instância da calculadora
+		CalculadoraDeSalario calculadora = new CalculadoraDeSalario();
+		
+		// Alguns funcionários
+		Employee developer = new Employee(1000, Occupation.DEVELOPER);
+		Employee dba = new Employee(1000, Occupation.DBA);
+		
+		// Usando a calculadora para calcular
+		double salaryForDeveloper = calculadora.calcula(developer);
+		double salaryForDba = calculadora.calcula(dba);
+		
+		System.out.println("Salary for developer: " + salaryForDeveloper);
+		System.out.println("Salary for dba: " + salaryForDba);
 	}
 }

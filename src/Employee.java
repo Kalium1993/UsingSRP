@@ -16,4 +16,12 @@ public class Employee {
 		return baseSalary;
 	}
 	
+	// Aqui o cálculo é finalmente executado, mas pelo
+	// objeto occupation (cargo) do funcionário, pois
+	// é ele que sabe a regra. Estamos simplesmente
+	// passando a responsabilidade do cálculo para a
+	// occupation.
+	public double calculate() {
+		return this.occupation.getRules().calculate(this);
+	}
 }
