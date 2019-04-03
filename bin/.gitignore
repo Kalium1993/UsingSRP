@@ -1,8 +1,9 @@
 /App.class
 /CalculationRules.class
+/Calculations.class
 /Employee.class
+/FiftyOrTwentyFivePerCent.class
 /Occupation.class
 /SalaryCalculator.class
 /TenOrTwentyPerCent.class
-/Calculations.class
-/FiftyOrTwentyFivePerCent.class
+/FifteenOrTwentyFivePerCent.class

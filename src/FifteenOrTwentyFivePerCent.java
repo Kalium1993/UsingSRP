@@ -1,5 +1,5 @@
 
-public class FiftyOrTwentyFivePerCent implements CalculationRules{
+public class FifteenOrTwentyFivePerCent implements CalculationRules{
 
 	public double calculate(Employee employee) {
 		if (employee.getBaseSalary() > 3000) {
